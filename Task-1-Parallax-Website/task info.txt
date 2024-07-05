@@ -1,0 +1,4 @@
+Parallax Website:
+
+Create a multi-section website with individual background images & parallax scrolling effect.
+Features: Navigation menu, content sections, animation effects, optimization, responsive design.

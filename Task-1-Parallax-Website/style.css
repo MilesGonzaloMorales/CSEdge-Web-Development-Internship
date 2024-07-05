@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+h1 {
+    font-size: 120px;
+    text-align: center;
+    color: rgba(255, 255, 255, .4)
+}
+
+.Parallax-1 {
+    background: url('img1.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+}
+
+.Parallax-2 {
+    background: url('img2.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+}
+
+.Parallax-3 {
+    background: url('img3.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+}
+
+.Parallax-4 {
+    background: url('img4.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 70vh;
+}
+
+/* .Parallax-inner {
+    padding: 10% 0;
+} */
+
+.first {
+    font-family: "Audiowide", sans-serif;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.text {
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: center;
+    align-items: center;
+    margin: 50px 40px;
+}
+
+h2 {
+    font-size: 32px;
+    color: blueviolet;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+    margin: 20px 0 10px;
+}
+
+p:nth-of-type(2),
+p:nth-of-type(3) {
+    margin: 40px 50px
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+    background-image: url('https://www.marvel.com/movies/deadpool-and-wolverine');
+    background-size: cover;
+    background-position: center;
+}
+
+.vid {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
+}
+
+.vid iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.movie-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    /* width: calc(33.333% - 20px); */
+    width: calc(25% - 20px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.movie-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.movie-item h3 {
+    margin-top: 0;
+    color: #444;
+    font-size: 1.5rem;
+}
+
+.movie-item a {
+    margin-top: 0;
+    color: #444;
+    font-size: 1.5rem;
+}
+
+.movie-item p {
+    margin: 0;
+    color: #666;
+    font-size: 1rem;
+}
+
+
+/* FOOTER CSS */
+.rights {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 7px 0px;
+}
+
+
+/* RESPONSIVENESS */
+@media (max-width: 1200px) {
+    .movie-item {
+        width: calc(33.333% - 20px);
+    }
+}
+
+@media (max-width: 768px) {
+    .movie-item {
+        width: calc(50% - 20px);
+    }
+
+    .first {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .movie-item {
+        width: 100%;
+    }
+
+    .first {
+        font-size: 1.5rem;
+    }
+
+    h1 {
+        font-size: 60px;
+    }
+}

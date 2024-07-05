@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Generator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Resume Generator</h1>
+      <form id="resume-form">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required></textarea>
+
+        <label for="summary">Professional Summary:</label>
+        <textarea id="summary" name="summary" required></textarea>
+
+        <label for="education">Education:</label>
+        <textarea id="education" name="education" required></textarea>
+
+        <label for="experience">Work Experience:</label>
+        <textarea id="experience" name="experience" required></textarea>
+
+        <label for="skills">Skills:</label>
+        <textarea id="skills" name="skills" required></textarea>
+
+        <button type="button" onclick="generateResume()">
+          Generate Resume
+        </button>
+      </form>
+
+      <div id="resume" class="resume">
+        <!-- Generated resume will be displayed here -->
+      </div>
+    </div>
+
+    <!-- Include jsPDF and html2canvas libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
